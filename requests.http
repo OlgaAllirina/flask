@@ -1,0 +1,35 @@
+# примеры API-запросов
+
+@baseUrl = http://127.0.0.1:5000/ad
+
+# получение объявления
+GET {{baseUrl}}/1
+Content-Type: application/json
+
+###
+
+# создание объявления
+POST {{baseUrl}}/
+Content-Type: application/json
+
+{"title": "title1",
+  "description": "desc1",
+   "owner": "user1"
+                         }
+
+###
+
+# попытка поменять объявление
+PATCH {{baseUrl}}/1/
+Content-Type: application/json
+
+{
+  "title": "title2"
+}
+
+###
+
+# попытка удалить объявление
+DELETE  {{baseUrl}}/1/
+Content-Type: application/json
+
